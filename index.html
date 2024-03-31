@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased text-gray-600 min-h-full flex flex-col [overflow-anchor:none]">
+
+   <div class="pointer-events-auto w-[31rem] rounded-lg bg-white p-4 text-[0.8125rem] leading-5 shadow-xl shadow-black/5 hover:bg-slate-50 ring-1 ring-slate-700/10">
+    <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-slate-900">📝 To-Do List</h1>
+    <div id="alert"></div>
+    <div class="todoInput">
+        <label for="toDo"></label>
+        <input type="text" id="toDo" placeholder="Enter your Task" onkeypress="handleKeyPress(event)">
+        <button onclick="get()">Add</button>
+    </div>
+    <div class="todoOutput">
+        <div id="results">
+        <label><p onclick="check(this)" id="todotask"><input type="checkbox">Deploy App<a onclick="remove(this);" id="close">X</a></p></label>
+        <label><p onclick="check(this)" id="todotask"><input type="checkbox">Install Tailwind CSS<a onclick="remove(this);" id="close">X</a></p></label>
+        <label><p onclick="check(this)" id="todotask" style="text-decoration: line-through;"><input type="checkbox" checked>Install NextJS<a onclick="remove(this);" id="close">X</a></p></label>
+        <label><p onclick="check(this)" id="todotask" style="text-decoration: line-through;"><input type="checkbox" checked>Create New App<a onclick="remove(this);" id="close">X</a></p></label>
+        <label ><p onclick="check(this)" id="todotask"><input type="checkbox">Install NodeJS<a onclick="remove(this);" id="close">X</a></p></label>
+        <label ><p onclick="check(this)" id="todotask"><input type="checkbox">Learn Javascript<a onclick="remove(this);" id="close">X</a></p></label>
+        <label ><p onclick="check(this)" id="todotask"><input type="checkbox">Learn css<a onclick="remove(this);" id="close">X</a></p></label>
+        <label ><p onclick="check(this)" id="todotask" style="text-decoration: line-through;"><input type="checkbox" checked>Learn HTML<a onclick="remove(this);" id="close">X</a></p></label>
+        <label><p onclick="check(this)" id="todotask"><input type="checkbox">Hello World👋<a onclick="remove(this);" id="close">X</a></p></label>
+        </div>
+    </div>
+   </div>
+
+    
+
+
+
+
+<p>Ceated With ❤️ by <a href="https://github.com/redouanaarab">Redouan Aaarab</a></p>
+    <script src="main.js"></script>
+</body>
+</html>

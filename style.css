@@ -1,0 +1,70 @@
+body {
+    background: #cccccc2e;
+    margin: 0;
+    text-align: center;
+}
+
+.ring-slate-700\/10 {
+    margin: 31px auto;
+}
+
+input#toDo {
+    padding: 9px;
+    width: 74%;
+    border-radius: 5px;
+    background: rgb(59 130 246 / 14%);
+}
+
+button {
+    padding: 8px;
+    width: 18%;
+}
+
+button {
+    padding: 6px;
+    width: 18%;
+    background: #022f54b0;
+    color: #fff;
+    padding: 9px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #000;
+}
+
+#results {
+    text-align: left;
+}
+
+.todoInput {
+    margin-bottom: 17px;
+}
+
+#todotask {
+    border-bottom: 1px dashed #4285f44d;
+    padding: 12px;
+    font-size: 18px;
+}
+
+#todotask:hover {
+    background-color: #022f54b0;
+    color: white;
+    border-radius: 8px;
+}
+
+#close {
+    text-align: left;
+    display: inline-flex;
+    float: inline-end;
+    color: red;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
